@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/popups.css">
-    <title>Игра</title>
+    <title>Start</title>
 </head>
-
 <body>
 <header class="header-container">
+
     <div class="author__header">
         <h1 class="game-name__header">Dino games</h1>
         Created By: Kuzina Valeriia, 191-362, Var3 (dino)
@@ -25,66 +26,70 @@
         </object>
     </div>
 </header>
-<section class="container">
-
+<section class="container rocket-backgound">
     <div class="container__wrapper">
-        <h2 class="common-header-second">Игра</h2>
-        <div class="main-game">
-            <div class="main-game__menu">
-                <p>Меню</p>
-                <ul>
-                    <li>
-                        Начать новую игру
-                    </li>
-                    <li>
-                        Загрузить сохранение
-                    </li>
-                    <li>
-                        Посмотреть таблицу очков
-                    </li>
-                    <li>
-                        Настройки
-                    </li>
-                    <li>
-                        Выход
-                    </li>
-                </ul>
+        <h2 class="common-header-second">Авторизация</h2>
+        <form action="#">
+            <div>
+                <label for="">Введите логин:</label>
+                <input
+                        type="text"
+                        id="name"
+                        name="user-name"
+                        placeholder="Введите логин"
+                />
             </div>
-            <div class="animated-objects">
-                <img class="bird" src="img/bird.png" alt="planet">
-                <img class="dinonorm" src="img/dinonorm.jpeg" alt="star">
-                <img class="dino_age" src="img/Dinoice_age.png" alt="alien">
-                <img class="tank" src="img/tank.png" alt="rocket">
+            <div>
+                <label for="">Введите пароль:</label>
+                <input
+                        type="text"
+                        id="password"
+                        name="user-password"
+                        placeholder="Введите пароль"
+                />
             </div>
-        </div>
-        <h2 class="common-header-second">Количество очков: 0</h2>
+            <div>
+                <button class="container__button">
+                    <a href="game.html">Войти</a>
+                </button>
+                <button class="container__button">Восстановить пароль
+                </button>
+            </div>
+            <div>
+                <button class="container__button">
+                    <a href="registration.html">Регистрация</a>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</section>
+<section class="container">
+    <div class="container__wrapper">
+        <h2 class="common-header-second">Что вас ждет в игре?</h2>
+
+        <p class="discribe">
+        <p class="describe__text-block">
+            Игра <span class="select-text">Dino games</span> это игра сонованная на лучших играх прошлого.
+        Отстреливайся от динозавра пока он не слопал тебя!
+        </p>
+        <p class="describe__text-block">
+            Совместим аркаду из 80ых и <span class="select-text"> RPG</span>! Конечно, решили мы.
+            Вам понравится как только начнёте <span class="select-text">играть</span>!
+            Для этого всего-то надо <span class="select-text"> пройти авторизацию </span> или <span class="select-text">зарегестрироваться</span>,
+            если у вас еще нет аккаунта.
+        </p>
+        <p class="describe__text-block">
+            <span class="select-text"> Правила </span>очень просты: <span
+                class="select-text"> Убивать динозавров </span>, <span class="select-text"> развивать сюжетную линию главного героя, делая выбор </span>,
+            <span class="select-text"> прокачиваться! </span>
+        </p>
+        </p>
+        </p>
+        </p>
+        </p>
     </div>
 </section>
-
-<div class="popup_login" id="popup_new_order">
-    <a href="#" class="popup_login_area">
-    </a>
-    <div class="popup_login_body">
-        <div class="popup_login_content">
-            <a href="#" class="popup_login_close">X</a>
-            <p class="popup-login-title">
-                Подсказка
-            </p>
-            <form action="#" method="POST" class="form_popup_login" id="form_popup_login">
-                <p class="popup-login-title">
-                    Чтобы играть нажмите "новая игра".
-                </p>
-                <p class="popup-login-title">
-                    Чтобы играть кликайне по стрелочкам.
-                </p>
-                <p class="popup-login-title">
-                    Чтобы сохранить игру, нажмите F5 во время поединка.
-                </p>
-            </form>
-        </div>
-    </div>
-</div>
-<script src="scripts/jquery.js"></script>
-<script src="scripts/main.js"></script>
+<div class="animated-rocket"><img class="animated-rocket__img" src="img/rocket-312767_960_720.png" alt=""></div>
 </body>
 </html>

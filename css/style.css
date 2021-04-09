@@ -104,7 +104,7 @@ body {
     grid-area: head;
     font-size: 1em;
     font-weight: 300;
-    background-color: #00FF00;
+    background-color: #009520;
     color: rgb(252, 252, 252);
 }
 
@@ -231,7 +231,7 @@ input {
 
 }
 
-.tank-backgound {
+.rocket-backgound {
     background-image: url("../img/dino-kop.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -252,7 +252,7 @@ input {
     letter-spacing: 0.1em;
 }
 
-.animated-tank {
+.animated-rocket {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -261,7 +261,7 @@ input {
     animation: fly 10s ease-in-out infinite;
 }
 
-.animated-tank__img {
+.animated-rocket__img {
     width: 100%;
 }
 
